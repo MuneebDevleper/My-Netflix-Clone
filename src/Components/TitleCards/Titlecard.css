@@ -71,4 +71,7 @@ height: 8.2vmax;
 
       padding-left: 10px;
     }
+    .card-data {
+    gap: 8px;
+}
 }
