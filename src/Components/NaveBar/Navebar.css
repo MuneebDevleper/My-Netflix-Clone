@@ -1,0 +1,183 @@
+.nav-bar {
+    
+    width: 100%;
+    display: flex;
+    padding: 10px 6%;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 10%, transparent); 
+        position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+ .left-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    position: relative;
+ }
+
+.left-bar > img {
+    height: 28px;
+    cursor: pointer;
+    margin-right: 3vmax;
+
+    
+    
+}
+
+
+.left-bar > ul {
+    display: flex;
+    gap: 19px;
+    position: relative;
+    z-index: 3;
+
+}
+ .left-bar > ul li {
+    list-style: none;
+    cursor: pointer;
+
+
+ }
+
+  .left-bar > ul li:hover {
+    text-decoration: underline;
+  }
+
+ .right-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+
+ }
+ .caret-container {
+    display: flex;
+    align-items: end;
+    position: relative;
+ }
+.caret-container > img {
+    border-radius: 5px;
+    height: 28px;
+    cursor: pointer;
+}
+
+
+
+ .icons {
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 50%;
+
+ }
+
+.caret {
+    width: 26px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 50%;
+
+
+}
+
+.caret-container > p {
+    position: absolute;
+    top: 30px;
+    width: 151px;
+    padding: 10px;
+    right: 1px;
+    background-color: rgb(58, 58, 58);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    cursor: pointer;
+}
+.caret-container > p:hover {
+    display: block;
+    text-decoration: underline;
+}
+
+.caret-container:hover p {
+     opacity: 1;
+    visibility: visible;
+  
+}
+
+.dark {
+        background-image: linear-gradient( rgba(46, 45, 45, 0.9) 100%, transparent); 
+    
+}
+
+@media only screen and (max-width: 1070px) {
+.nav-bar {
+    padding: 10px 3%;
+
+}
+
+.left-bar> img {
+    height: 2.5vmax;
+}
+
+.left-bar > ul {
+    gap: 12px;
+    font-size: 12px;
+}
+
+}
+
+.bar-icon > img {
+    height: 30px;
+    display: none;
+    margin-right: 10px;
+
+}
+
+
+
+@media only screen and (max-width: 950px) {
+    .left-bar {
+        position: relative;
+    }
+
+    .left-bar > ul {
+        position: absolute;
+        flex-direction: column;
+        top: 40px;
+        right: 200px;
+        width: 180px;
+        background-color: rgb(58, 58, 58);
+        padding: 10px;
+        margin: 0;
+        transition: right 0.3s ease;
+        z-index: 100;
+    }
+
+    .left-bar > ul.active-menu {
+        right: -40px;
+    }
+
+
+     .left-bar > ul li {
+        background-color:rgb(58, 58, 58) ;
+        font-size: 14px;
+     }
+  
+
+     .bar-icon> img {
+        display: block;
+        cursor: pointer;
+ 
+    }
+    .caret-container > p {
+        font-size: 13px;
+        width: 140px;
+    }
+}

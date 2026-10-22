@@ -1,0 +1,122 @@
+.log-in {
+    height: 100vh;
+    width: 100%;
+background-image: linear-gradient(#0000007e, #0000007e), url(../../assets/background_banner.jpg);
+    background-repeat: round;
+position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log-in>img {
+    position: absolute;
+    top: 30px;
+    left: 8%;
+    height: 45px;
+}
+
+.loginform {
+    width: 385px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.loginform>h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+form>input {
+    background-color: rgb(58, 58, 58);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+form>button {
+    background-color: brown;
+    color: alicebluex;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.help {
+    margin: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.help>label,
+.help>p {
+    font-size: 13px;
+    color: rgb(153, 154, 154);
+    cursor: pointer;
+}
+
+.help>p:hover {
+    text-decoration: underline;
+}
+
+#check-box {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.add-user {
+    margin-top: 20px;
+}
+.add-user > p{
+    color: rgb(153, 154, 154);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.lodding {
+position: absolute;
+margin-left: 50%;
+margin-top: 20%;
+height: 500px;
+background-color: yellowgreen;
+z-index: 3;
+
+}
+
+@media only screen and (max-width: 1000px) {
+.log-in {
+   background-repeat: repeat;
+background-position: center;
+background-size: cover;
+    
+
+  
+}
+}
+@media only screen and (max-width: 400px) {
+    .loginform {
+    width: 385px;
+    padding: 30px;
+}
+form>button {
+    font-family: 13px;
+}
+form> input {
+    font-size: 13px;
+}
+.add-user > p{
+    color: rgb(153, 154, 154);
+    font-size: 12px;
+    
+}
+}

@@ -1,0 +1,74 @@
+
+.titlecard {
+    width: 100%;
+      padding-left: 6%;
+       position: relative;
+    z-index: 1;
+
+    
+    
+}
+.titlecard h1 {
+  padding-top: 2.2vmax;
+    font-size: 2rem;
+}
+.card-data {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    overflow-x: scroll;
+    position: relative;
+}
+
+.card-data::-webkit-scrollbar {
+    display: none;
+}
+.card img {
+height: 140px;
+border-radius: 9px;
+}
+
+.card p {
+    position: absolute;
+    bottom: 10px;
+    width: 10%;
+    margin-left: 3px;
+}
+.more-cards {
+    width: 100%;
+    background-color: black;
+    padding: 2vmax 0;
+    scrollbar-width: hidden;
+}
+
+@media only screen and (max-width: 1100px) {
+
+.card img {
+height: 10vmax;
+border-radius: 5px;
+}
+.card p {
+    font-size: 10px;
+    width: 17%;
+}
+.titlecard h1 {
+    padding-top: 15px;
+    font-size: 2.2vmax;
+    padding: 5px;
+}
+}
+
+@media only screen and (max-width: 600px) { 
+
+.card img {
+height: 7.7vmax;
+}
+.card p {
+    font-size: 10px;
+    width: 20%;
+}
+.titlecard {
+
+      padding-left: 10px;
+    }
+}

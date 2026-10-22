@@ -1,0 +1,127 @@
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../../assets/hero_banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+    to left,
+    transparent 0%,
+    rgba(0, 0, 0, 0.9) 100%
+);
+    z-index: 0;
+}
+
+ .hero-in {
+    width: 100%;
+    padding: 8% 6% 0 6%;
+    position: relative;
+    z-index: 1;
+ }
+
+.hero-in > img {
+    margin-top: 3vmax;
+height:160px;
+}
+
+.hero-in > p {
+    margin-top: 25px;
+    width: 570px;
+}
+.hero-btn {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.hero-btn button {
+    height: 40px;
+    padding: 15px;
+    background-color:aliceblue;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border: none;
+cursor: pointer;
+}
+
+.hero-btn button >img {
+    height: 25px;
+}
+
+.hero-btn p {
+    color: black;
+}
+
+.hero-btn .info {
+   background: linear-gradient(
+    transparent,
+    rgba(216, 215, 215,0.5)0%
+);
+}
+.info > p {
+    color: aliceblue;
+}
+
+
+.hero-btn .info:hover {
+       background: linear-gradient(
+    transparent,
+    rgba(216, 215, 215,0.2)0%
+);
+}
+
+.hero-btn button:hover {
+    background-color: rgb(212, 214, 215);
+}
+
+@media only screen and (max-width: 1100px) {
+
+.hero {
+     min-height: 100%;
+     padding-bottom: 10px;
+    }
+
+    .hero-btn button {
+        height: 4vmax;
+         padding: 1vmax;
+         margin-bottom: 8px;
+            }
+            .hero-btn button >img {
+    height: 2vmax;
+}
+
+.hero-btn p {
+    color: black;
+    font-size: 13px;
+}
+
+
+}
+
+@media only screen and (max-width: 600px) { 
+    .hero-in > p {
+    font-size: 1.5vmax;
+    width: 90%;
+    line-height: 17px;
+}
+.hero-in > img {
+    margin-top: 3vmax;
+height: 100px;
+}
+.hero-in {
+    padding-left: 10px;
+}
+}
