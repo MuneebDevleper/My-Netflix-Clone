@@ -61,7 +61,7 @@ border-radius: 5px;
 @media only screen and (max-width: 600px) { 
 
 .card img {
-height: 8.2vmax;
+height: 8.5vmax;
 }
 .card p {
     font-size: 10px;
